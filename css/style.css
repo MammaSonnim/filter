@@ -2,4 +2,11 @@ body {
   font-size: 14px;
   line-height: 1.25px;
   font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  background-color: #fd7c61;
 }
+
+.filter {
+  background-color: #ca634e;
+}
+
