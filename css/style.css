@@ -1,12 +1,39 @@
 body {
   font-size: 14px;
-  line-height: 1.25px;
   font-family: 'Quicksand', sans-serif;
   color: #ffffff;
   background-color: #fd7c61;
 }
 
 .filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 325px;
+  margin: 20px auto;
   background-color: #ca634e;
+  border: 3px solid #ca634e;
+  border-radius: 25px;
 }
 
+.filter__toggle {
+  display: none;
+}
+
+.filter__control {
+  cursor: pointer;
+  padding: 0 15px;
+  line-height: 28px;
+  border-radius: 25px;
+}
+
+.filter__toggle_1:checked ~ .filter__control_1,
+.filter__toggle_2:checked ~ .filter__control_2,
+.filter__toggle_3:checked ~ .filter__control_3,
+.filter__toggle_4:checked ~ .filter__control_4 {
+  background-color: #fd7c61;
+}
