@@ -6,6 +6,7 @@ body {
 }
 
 .filter {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,20 +21,53 @@ body {
   border-radius: 25px;
 }
 
-.filter__toggle {
+.filter__input {
   display: none;
 }
 
-.filter__control {
-  cursor: pointer;
-  padding: 0 15px;
-  line-height: 28px;
+.filter__toggle {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background-color: #fd7c61;
   border-radius: 25px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.filter__toggle_1:checked ~ .filter__control_1,
-.filter__toggle_2:checked ~ .filter__control_2,
-.filter__toggle_3:checked ~ .filter__control_3,
-.filter__toggle_4:checked ~ .filter__control_4 {
-  background-color: #fd7c61;
+.filter__input_1:checked ~ .filter__toggle {
+  -webkit-transform: translate(0px);
+  -ms-transform: translate(0px);
+  transform: translate(0px);
 }
+
+.filter__input_2:checked ~ .filter__toggle {
+  -webkit-transform: translate(82px);
+  -ms-transform: translate(82px);
+  transform: translate(82px);
+}
+
+.filter__input_3:checked ~ .filter__toggle {
+  -webkit-transform: translate(162px);
+  -ms-transform: translate(162px);
+  transform: translate(162px);
+}
+
+.filter__input_4:checked ~ .filter__toggle {
+  -webkit-transform: translate(245px);
+  -ms-transform: translate(245px);
+  transform: translate(245px);
+}
+
+.filter__option {
+  position: relative;
+  width: 80px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  z-index: 1;
+}
+
