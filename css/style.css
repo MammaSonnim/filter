@@ -14,7 +14,7 @@ body {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width: 325px;
+  width: 483px;
   margin: 20px auto;
   background-color: #ca634e;
   border: 3px solid #ca634e;
@@ -60,6 +60,18 @@ body {
   -webkit-transform: translate(245px);
   -ms-transform: translate(245px);
   transform: translate(245px);
+}
+
+.filter__input_5:checked ~ .filter__toggle {
+  -webkit-transform: translate(323px);
+  -ms-transform: translate(323px);
+  transform: translate(323px);
+}
+
+.filter__input_6:checked ~ .filter__toggle {
+  -webkit-transform: translate(403px);
+  -ms-transform: translate(403px);
+  transform: translate(403px);
 }
 
 .filter__option {
