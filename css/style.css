@@ -51,21 +51,21 @@ body {
 }
 
 .filter__input_3:checked ~ .filter__toggle {
-  -webkit-transform: translate(162px);
-  -ms-transform: translate(162px);
-  transform: translate(162px);
+  -webkit-transform: translate(161px);
+  -ms-transform: translate(161px);
+  transform: translate(161px);
 }
 
 .filter__input_4:checked ~ .filter__toggle {
-  -webkit-transform: translate(245px);
-  -ms-transform: translate(245px);
-  transform: translate(245px);
+  -webkit-transform: translate(242px);
+  -ms-transform: translate(242px);
+  transform: translate(242px);
 }
 
 .filter__input_5:checked ~ .filter__toggle {
-  -webkit-transform: translate(323px);
-  -ms-transform: translate(323px);
-  transform: translate(323px);
+  -webkit-transform: translate(322px);
+  -ms-transform: translate(322px);
+  transform: translate(322px);
 }
 
 .filter__input_6:checked ~ .filter__toggle {
